@@ -3,10 +3,18 @@
     <uni-nav-bar
       class="nav-bar"
       :border="false"
-      leftText="返回"
       dark
       backgroundColor="#000"
-    />
+    >
+      <uni-icons
+        class="back-icon"
+        color="#fff"
+        custom-prefix="iconfont"
+        type="icon-arrow-left"
+        size="24"
+        @click="back"
+      />
+    </uni-nav-bar>
     <img  src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/shine%402x.png" alt="">
     <br/>
     <img src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/mask-group%20.png" alt="">
@@ -84,9 +92,15 @@ export default {
   name: "collection-detail",
   components: {uniNavBar, uniIcons,uniFav,uniCountdown, Badge },
   created () {
-    console.log(this)
+    // console.log(this)
 
+  },
+  methods:{
 
+    /* 路由相关 */
+    back(){
+      uni.navigateBack()
+    }
   }
 }
 </script>
@@ -96,6 +110,15 @@ export default {
   margin-bottom: -135rpx;
   background-color: #000;
   text-align: center;
+  .nav-bar{
+    position: relative;
+    .back-icon{
+      position: absolute;
+      left: 10rpx;
+      top: 50%;
+      transform:translateY(-50%);
+    }
+  }
   img{
     width: 50%;
   }
