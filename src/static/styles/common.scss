@@ -51,3 +51,10 @@ ul{
   list-style: none;
   padding-left: 0;
 }
+
+/* 单行省略号 */
+.ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
