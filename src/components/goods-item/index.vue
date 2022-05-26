@@ -1,10 +1,10 @@
 <template>
-  <div class="sale-plan-item-wrapper">
-    <img class="image" :src="salePlanItem.imgUrl" alt="">
+  <div class="goods-item-wrapper">
+    <img class="image" :src="goodsItem.imgUrl" alt="">
     <div class="item-info">
-      <p class="title">{{ salePlanItem.title }}</p>
-      <Badge class="badge" title="限量" :count="salePlanItem.count" />
-      <p class="price">￥ {{ salePlanItem.price }}</p>
+      <p class="title">{{ goodsItem.title }}</p>
+      <Badge class="badge" title="限量" :count="goodsItem.count ? goodsItem.count : null" />
+      <p class="price">￥ {{ goodsItem.price }}</p>
     </div>
   </div>
 </template>
@@ -12,10 +12,10 @@
 <script>
 import Badge from "@/components/badge";
 export default {
-  name: "sale-plan-item",
+  name: "goods-item",
   components:{Badge},
   props:{
-    salePlanItem:{
+    goodsItem:{
       type:Object,
       required:true
     }
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.sale-plan-item-wrapper{
+.goods-item-wrapper{
   background-color: #323334;
   border-radius: 10rpx;
   overflow: hidden;

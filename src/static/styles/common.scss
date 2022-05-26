@@ -31,6 +31,10 @@ html,body{
   box-sizing: inherit;
 }
 
+img{
+  width: 100%;
+}
+
 /* 清浮动模块 */
 .clearfix::before,
 .clearfix::after{

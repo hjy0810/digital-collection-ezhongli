@@ -44,11 +44,11 @@
               <p class="data">{{ item.date }}</p>
               <p class="detail-time">{{ item.detailTime }}</p>
             </div>
-            <SalePlanItem
+            <goodsItem
               v-for="(item1,index1) in item.goods"
               :key="index1"
               class="item"
-              :sale-plan-item="item1"
+              :goods-item="item1"
             />
           </li>
         </ul>
@@ -56,8 +56,8 @@
       </div>
 
       <!--  内容精选  -->
-      <div v-if="curIndex === 2 " class="content-item item-3">
-        <img class="image" src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/Showroom%402x.png" alt="">
+      <div v-if="curIndex === 2 " class="content-item item-3" >
+        <img @click="toContentPage" class="image" src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/Showroom%402x.png" alt="">
         <div class="detail">
           <p class="title">中国电影资料馆</p>
           <p class="description">国家电影档案馆，1958年成立，1980年成为国际电影资料馆联合会(FIAF) 正式会员。1984年组建中国电影艺术研究中心，两块牌子共同运行。
@@ -71,16 +71,16 @@
 
 <script>
 import Badge from "@/components/badge";
-import SalePlanItem from "@/components/sale-plan-item";
+import goodsItem from "@/components/goods-item";
 export default {
   components: {
     Badge,
-    SalePlanItem
+    goodsItem
   },
   data(){
     return {
       navInfo:['数字藏品','发售日历','内容精选'],
-      curIndex:0,
+      curIndex:1,
       salePlanInfo:[
         {
           date:'05月24日',
@@ -174,6 +174,11 @@ export default {
     toCollectionPage(){
       uni.navigateTo({
         url:'/pages/collection-detail/index'
+      })
+    },
+    toContentPage(){
+      uni.navigateTo({
+        url:'/pages/content-well-chosen/index'
       })
     }
 

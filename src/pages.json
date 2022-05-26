@@ -10,9 +10,12 @@
       "path": "pages/collection-detail/index",
       "style": {
         "app-plus": {
-          "titleNView": false
+          "titleNView": false  /* 禁用原生导航栏 */
         }
       }
+    },
+    {
+      "path": "pages/content-well-chosen/index"
     }
   ],
   "globalStyle": {
