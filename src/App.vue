@@ -1,14 +1,13 @@
 <script>
 
 export default {
-  created () {
 
-  }
 
 }
 </script>
 
 <style lang="scss">
 @import './static/styles/index.scss';
+@import "./static/iconfont/iconfont.css";
 
 </style>

@@ -1,9 +1,17 @@
 {
   "pages": [
     {
-      "path": "pages/home/main",
+      "path": "pages/home/index",
       "style": {
         "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/collection-detail/index",
+      "style": {
+        "app-plus": {
+          "titleNView": false
+        }
       }
     }
   ],
@@ -22,7 +30,7 @@
     "spacing": "5px",
     "list": [
       {
-        "pagePath": "pages/home/main",
+        "pagePath": "pages/home/index",
         "text": "首页",
         "iconPath": "static/icon/home.png",
         "selectedIconPath": "static/icon/home-active.png"

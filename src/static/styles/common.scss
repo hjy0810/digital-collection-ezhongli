@@ -9,9 +9,8 @@ html,body{
     [data-page]{
       height: 100%;
       uni-page-wrapper{
-        height: calc(100% - 135rpx) !important;
-        padding-left: 32rpx;
-        padding-right: 32rpx;
+        //height: calc(100% - 135rpx) !important;
+        height: 100% !important;
         background-color: $bg-color;
         uni-page-body{
           overflow: auto;

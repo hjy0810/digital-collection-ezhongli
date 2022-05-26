@@ -15,7 +15,7 @@
     </ul>
     <section class="main-content">
       <!--  数字藏品  -->
-      <div v-if="curIndex === 0" class="content-item item-1">
+      <div v-if="curIndex === 0" class="content-item item-1" @click="toCollectionPage">
         <img src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/white-duck-produce%402x.png" alt="">
         <div class="info">
           <div class="header">这是一个藏品名称这是一个藏品名称这是一个藏品名称这是一个藏品名称</div>
@@ -80,7 +80,7 @@ export default {
   data(){
     return {
       navInfo:['数字藏品','发售日历','内容精选'],
-      curIndex:2,
+      curIndex:0,
       salePlanInfo:[
         {
           date:'05月24日',
@@ -169,6 +169,12 @@ export default {
   methods: {
     changeIndex(index){
       this.curIndex = index
+    },
+    /* 跳转 */
+    toCollectionPage(){
+      uni.navigateTo({
+        url:'/pages/collection-detail/index'
+      })
     }
 
   }
@@ -177,6 +183,9 @@ export default {
 
 <style scoped lang="scss">
 .container{
+  margin-bottom: 135rpx;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
   &.is-hidden{
     overflow: hidden;
   }
