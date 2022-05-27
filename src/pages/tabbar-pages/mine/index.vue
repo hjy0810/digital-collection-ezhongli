@@ -112,16 +112,25 @@ export default {
   methods:{
     /* 跳转相关 */
     toMyLike(){
-      console.log('to like')
+      uni.navigateTo({
+        url:"/pages/my-like/index"
+
+      })
     },
     toMyOrder(){
-
+      uni.navigateTo({
+        url:"/pages/my-order/index"
+      })
     },
     toMyCollection(){
-
+      uni.navigateTo({
+        url:"/pages/my-record/index"
+      })
     },
     toMyMessage(){
-
+      uni.navigateTo({
+        url:"/pages/my-message/index"
+      })
     }
   }
 }
@@ -177,8 +186,6 @@ export default {
         font-size: 24rpx;
         color: white;
       }
-
-
     }
 
     .block-chain{

@@ -189,8 +189,7 @@ export default {
 <style scoped lang="scss">
 .container{
   margin-bottom: 135rpx;
-  padding-left: 32rpx;
-  padding-right: 32rpx;
+  padding: 0 32rpx 135rpx;
   &.is-hidden{
     overflow: hidden;
   }
