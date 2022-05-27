@@ -112,10 +112,15 @@ export default {
   methods:{
     /* 跳转相关 */
     toMyLike(){
-      console.log('to like')
+      uni.navigateTo({
+        url:"/pages/my-like/index"
+
+      })
     },
     toMyOrder(){
-
+      uni.navigateTo({
+        url:"/pages/my-order/index"
+      })
     },
     toMyCollection(){
 

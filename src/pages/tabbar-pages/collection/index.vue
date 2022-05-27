@@ -76,14 +76,15 @@ export default {
 
 <style scoped lang="scss">
 .collection-page{
-  overflow: auto;
-  /* TODO: 底部样式待解决 */
-  //margin-bottom: -135rpx;
-  //padding-bottom: 135rpx;
-  background: #323639;
+  background: black;
+  padding-bottom: 250rpx;
   .header-wrapper{
-    margin: 65rpx 32rpx 140rpx;
+    height: 350rpx;
+    background-color:#323639 ;
+    overflow: auto;
+    padding:  0 32rpx 140rpx;
     .header{
+      margin-top: 65rpx;
       font-weight: 600;
       font-size: 40rpx;
       line-height: 56rpx;
@@ -98,6 +99,7 @@ export default {
   }
 
   .collection-wrapper{
+    margin-top: -50rpx;
     border-radius: 40rpx 40rpx 0 0;
     padding: 26rpx 32rpx;
     background-color: #101211;

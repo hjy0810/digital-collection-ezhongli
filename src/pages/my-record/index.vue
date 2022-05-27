@@ -1,13 +1,13 @@
 <template>
-  <div class="template-wrapper">
-    template-wrapper
+  <div class="my-record-page">
+    my-record-page
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "template",
+  name: "my-record",
   data(){
     return {
 
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.template-wrapper{
+.my-record-page{
 
 }
 </style>

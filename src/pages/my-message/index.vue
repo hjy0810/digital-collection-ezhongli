@@ -1,13 +1,13 @@
 <template>
-  <div class="template-wrapper">
-    template-wrapper
+  <div class="my-message-page">
+    my-message-page
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "template",
+  name: "my-message",
   data(){
     return {
 
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.template-wrapper{
+.my-message-page{
 
 }
 </style>

@@ -34,6 +34,34 @@
     },
     {
       "path": "pages/content-well-chosen/index"
+    },
+    {
+      "path": "pages/my-like/index",
+      "style": {
+        "navigationBarTitleText": "我的喜欢",
+        "navigationBarBackgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/my-order/index",
+      "style": {
+        "navigationBarTitleText": "我的订单",
+        "navigationBarBackgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/my-record/index",
+      "style": {
+        "navigationBarTitleText": "藏品记录 ",
+        "navigationBarBackgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/my-message/index",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "navigationBarBackgroundColor": "#000000"
+      }
     }
   ],
   "globalStyle": {
