@@ -8,7 +8,7 @@
           <p class="nickname">{{ userInfo.nickName }}</p>
           <p class="phone">{{ userInfo.phone }}</p>
         </div>
-        <button class="btn">个人主页</button>
+        <button @click="toMyHome" class="btn">个人主页</button>
       </div>
 
       <div class="block-chain">
@@ -130,6 +130,11 @@ export default {
     toMyMessage(){
       uni.navigateTo({
         url:"/pages/my-message/index"
+      })
+    },
+    toMyHome(){
+      uni.navigateTo({
+        url:"/pages/my-home/index"
       })
     }
   }

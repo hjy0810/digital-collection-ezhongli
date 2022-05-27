@@ -155,9 +155,6 @@ export default {
           ]
         }
       ]
-
-
-
     }
   },
   mounted() {

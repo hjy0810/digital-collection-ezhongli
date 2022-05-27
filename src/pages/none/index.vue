@@ -31,9 +31,9 @@ export default {
 <style scoped lang="scss">
 .none-page{
   text-align: center;
+  padding-top: 200rpx;
   .image{
     width: 50%;
-    margin-top: 200rpx;
     margin-bottom: 50rpx;
   }
 
