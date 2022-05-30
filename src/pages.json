@@ -84,6 +84,14 @@
         "navigationBarTitleText": "个人信息",
         "navigationBarBackgroundColor": "#000000"
       }
+    },
+    {
+      "path": "pages/release/index",
+      "style": {
+        "app-plus": {
+          "titleNView": false  /* 禁用原生导航栏 */
+        }
+      }
     }
   ],
   "globalStyle": {

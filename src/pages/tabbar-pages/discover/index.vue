@@ -269,7 +269,9 @@ export default {
       console.log('more')
     },
     toRelease(){
-      console.log('release')
+      uni.navigateTo({
+        url:'/pages/release/index'
+      })
     }
   }
 }
