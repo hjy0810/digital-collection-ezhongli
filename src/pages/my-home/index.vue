@@ -79,7 +79,9 @@ export default {
       uni.navigateBack()
     },
     toEditPage(){
-
+      uni.navigateTo({
+        url:'/pages/edit/index'
+      })
     }
 
   }
