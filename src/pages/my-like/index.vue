@@ -67,6 +67,9 @@ export default {
       this.curIndex = index
     },
     toDiscover(){
+      uni.switchTab({
+        url:'/pages/tabbar-pages/discover/index'
+      })
       console.log('dis')
     },
     toTopicSquare(){

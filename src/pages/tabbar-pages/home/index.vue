@@ -39,6 +39,7 @@
             class="plan-item"
             v-for="(item,index) in salePlanInfo"
             :key="index"
+            @click="toCollectionPage"
           >
             <div class="date-info">
               <p class="data">{{ item.date }}</p>
@@ -52,7 +53,6 @@
             />
           </li>
         </ul>
-
       </div>
 
       <!--  内容精选  -->
@@ -80,7 +80,7 @@ export default {
   data(){
     return {
       navInfo:['数字藏品','发售日历','内容精选'],
-      curIndex:1,
+      curIndex:0,
       salePlanInfo:[
         {
           date:'05月24日',

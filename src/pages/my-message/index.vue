@@ -5,7 +5,6 @@
         class="item"
         v-for="(item,index) in navInfo"
         :key="index"
-        @click="item.handleClick"
       >
         <uni-icons class="icon" color="#fff" custom-prefix="iconfont" :type="'icon-' + item.icon" size="26"></uni-icons>
         <p class="label">{{ item.label }}</p>

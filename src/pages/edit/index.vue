@@ -58,16 +58,31 @@
         ref="inputClose"
         mode="input"
         title="修改昵称"
-
         placeholder="支持2-16位中英文、数字"
         @confirm="dialogInputConfirm"
       />
     </uni-popup>
+
   </div>
 </template>
 
 <script>
-// import uniPopup from '@/components/popup/popup'
+// uni.showModal({
+//   title: '是否删除合同1',//提示标题
+//   editable:true,
+//   placeholderText:"ssss",
+//   cancelText: "取消", // 取消按钮的文字
+//   confirmText: "删除", // 确认按钮文字
+//   confirmColor:'#F54E40',//删除字体的颜色
+//   cancelColor:'#000',//取消字体的颜色
+//   success: function(res) {
+//     if (res.confirm) {
+//       that.delContractPort();
+//     } else if (res.cancel) {
+//
+//     }
+//   }
+// });
 import { uniIcons, uniPopup, uniTransition  } from '@dcloudio/uni-ui'
 export default {
   name: "edit",

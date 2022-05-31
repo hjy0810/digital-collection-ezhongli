@@ -17,6 +17,10 @@ html,body{
           height: 100%;
           //background-color: aquamarine;
           //padding-bottom: 135rpx;
+          &::-webkit-scrollbar{
+            /* 隐藏滚动条 */
+            display: none;
+          }
         }
       }
     }

@@ -13,7 +13,14 @@
 
       <div class="block-chain">
         <span class="id ellipsis">区块链地址: {{ userInfo.blockChainID }}</span>
-        <uni-icons class="icon" color="#fff" custom-prefix="iconfont" type="icon-copy" size="24"></uni-icons>
+        <uni-icons
+          class="icon"
+          color="#fff"
+          custom-prefix="iconfont"
+          type="icon-copy"
+          size="24"
+          @click="copy"
+        />
       </div>
     </header>
 
@@ -110,6 +117,13 @@ export default {
 
   },
   methods:{
+    /*操作*/
+    copy(){
+      uni.showToast({
+        title: '复制成功',
+        duration: 2000
+      });
+    },
     /* 跳转相关 */
     toMyLike(){
       uni.navigateTo({
@@ -153,7 +167,7 @@ export default {
     .icon-scan{
       position: absolute;
       top: 0;
-      right: 32rpx;
+      right: 0;
     }
 
     .avatar-wrapper{

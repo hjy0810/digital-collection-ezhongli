@@ -1,23 +1,14 @@
 <template>
   <div class="collection-page">
-    <uni-nav-bar
-      class="nav-bar"
-      :border="false"
-      dark
-      backgroundColor="#000"
-    >
-      <uni-icons
-        class="back-icon"
-        color="#fff"
-        custom-prefix="iconfont"
-        type="icon-arrow-left"
-        size="24"
-        @click="back"
-      />
-    </uni-nav-bar>
-    <img  src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/shine%402x.png" alt="">
-    <br/>
-    <img src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/mask-group%20.png" alt="">
+    <uni-icons
+      class="back-icon"
+      color="#fff"
+      custom-prefix="iconfont"
+      type="icon-arrow-left"
+      size="24"
+      @click="back"
+    />
+    <img class="goods" src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/mask-group%20.png" alt="">
 
     <div class="state">
       <img src="https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/booth%402x.png" alt="">
@@ -73,10 +64,6 @@
         ></uni-countdown>
       </button>
     </div>
-
-
-
-
   </div>
 </template>
 
@@ -107,20 +94,22 @@ export default {
 
 <style scoped lang="scss">
 .collection-page{
+  position: relative;
   margin-bottom: -135rpx;
-  background-color: #000;
+  background: #000 url(https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/shine%402x.png) top center no-repeat;
+  background-size: 50%;
   text-align: center;
-  .nav-bar{
-    position: relative;
-    .back-icon{
-      position: absolute;
-      left: 10rpx;
-      top: 50%;
-      transform:translateY(-50%);
-    }
+  .back-icon{
+    position: fixed;
+    left: 26rpx;
+    top: 80rpx;
   }
   img{
     width: 50%;
+  }
+
+  .goods{
+    margin-top: 500rpx;
   }
 
   .state{
@@ -155,34 +144,38 @@ export default {
       position: relative;
       display: flex;
       justify-content: center;
-      align-self: center;
-      margin-top: 100rpx;
+      align-items: center;
+      margin-top: 60rpx;
       color: #888;
       .purchase{
-        margin-left: 5rpx;
+        margin: 0;
+        padding-left: 5rpx;
+        padding-right: 5rpx;
         font-size: 20rpx;
         line-height: 28rpx;
-        }
-        &::before,
-        &::after{
-          position: absolute;
-          left:50%;
-          top: 15rpx;
-          display: inline;
-          content: '';
-          margin: auto;
-          width: 20%;
-          border-bottom:1px solid #888;
-        }
-        &::before{
-          transform: translateX(-200%);
-
-        }
-        &::after{
-          transform: translateX(100%);
-        }
+      }
+      &::before,
+      &::after{
+        position: absolute;
+        left:50%;
+        //top: 15rpx;
+        top: 50%;
+        display: inline;
+        content: '';
+        margin: auto;
+        width: 20%;
+        border-bottom:1px solid #888;
+      }
+      &::before{
+        transform: translateX(-200%);
+      }
+      &::after{
+        transform: translateX(100%);
       }
     }
+
+
+  }
 
   .avatar-info{
     display: flex;
@@ -195,7 +188,6 @@ export default {
       width: 74rpx;
       height:74rpx;
       border-radius: 50%;
-
     }
 
     .detail{
@@ -216,7 +208,6 @@ export default {
       background-color: #F3E1BD;
       font-weight: 600;
     }
-
   }
 
   .story{
@@ -272,9 +263,6 @@ export default {
       color: #CF703A;
       padding: 10rpx 100rpx;
     }
-
-
   }
-
 }
 </style>

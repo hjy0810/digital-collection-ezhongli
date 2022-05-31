@@ -29,10 +29,6 @@
         </li>
       </ul>
     </section>
-
-
-
-
   </div>
 </template>
 
@@ -82,6 +78,7 @@ export default {
 <style scoped lang="scss">
 .content-well-chosen-page{
   background: #1E201F;
+  padding-bottom: 100rpx;
   .detail-info{
     margin: 20rpx 32rpx;
     border: 3px solid #F2E1BD;
@@ -121,7 +118,7 @@ export default {
     }
     .goods-item{
       &:not(:last-child){
-        margin-bottom: 60rpx;
+        margin-bottom: 25rpx;
       }
 
       .item:not(:last-child){

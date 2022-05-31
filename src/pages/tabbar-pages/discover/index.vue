@@ -249,6 +249,22 @@ export default {
           ],
           commentCount:78,
           thumbUpCount:78
+        },
+        {
+          avatarUrl:'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/pinkduck%402x.png',
+          nickName:'周旭',
+          time:'10个小时以前',
+          content:'《人物御龙帛画》为2000多年前的“魂幡”，画面简洁而具有神秘意味，大多数学者认为这是一幅“导引灵魂升天”图。它保存较为完好，刻画生动，被称作“中国早期肖像画的杰出代表”',
+          imgList:[
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo-1%402x.png',
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo-1%402x.png',
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo-1%402x.png',
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo%402x.png',
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo%402x.png',
+            'https://w1-dev.oss-cn-hangzhou.aliyuncs.com/photos/digital/initial/photo%402x.png'
+          ],
+          commentCount:78,
+          thumbUpCount:78
         }
       ] /* 精选动态 */
     }
@@ -462,7 +478,7 @@ export default {
       }
 
       .content{
-        font-weight: 600;
+        //font-weight: 600;
         font-size: 32rpx;
         line-height: 45rpx;
         margin: 37rpx 0 65rpx 0;
@@ -497,7 +513,7 @@ export default {
           }
         }
         .comment{
-          border-right:1px solid #D9D9D9;
+          border-right:1rpx solid #D9D9D9;
         }
       }
     }
